@@ -19,6 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/material', [CompanyController::class, 'getMaterial']);
 
 Route::get('/make',[CompanyController::class,'getMaterials']);
